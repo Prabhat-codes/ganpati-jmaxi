@@ -3,10 +3,10 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Schedule } from './components/Schedule';
 import { AartiBook } from './components/AartiBook';
-import { ModakGame } from './components/ModakGame';
-import { MandapsGuide } from './components/MandapsGuide';
 import { PronunciationSection } from './components/PronunciationSection';
 import { MemoriesCarousel } from './components/MemoriesCarousel';
+import { MandapsGuide } from './components/MandapsGuide';
+import { ModakGame } from './components/ModakGame';
 import { EndingImageSection } from './components/EndingImageSection';
 import { Footer } from './components/Footer';
 import { SCHEDULE_DATA } from './data/scheduleData';
@@ -36,9 +36,9 @@ export function App() {
         <Hero />
         <Schedule activeEventId={activeEventId} onSelectEvent={handleSelectEvent} />
         <AartiBook />
-        <MandapsGuide />
         <PronunciationSection />
         <MemoriesCarousel />
+        <MandapsGuide />
         <ModakGame />
         <EndingImageSection />
       </main>

@@ -122,8 +122,8 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Countdown Ticker */}
-      <div style={{ width: '100%', maxWidth: '480px' }}>
+      {/* Single Wide Horizontal Countdown Tile */}
+      <div style={{ width: '100%', maxWidth: '600px' }}>
         <span style={{
           fontSize: '0.72rem',
           color: '#78716C',
@@ -136,10 +136,14 @@ export const Hero = () => {
           Countdown to Agaman
         </span>
 
-        <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: '10px'
+        {/* Single Wide Card Container */}
+        <div className="festive-card" style={{
+          padding: '16px 20px',
+          background: '#FFFFFF',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-around',
+          gap: '12px'
         }}>
           {[
             { label: 'DAYS', val: timeLeft.days },
@@ -147,24 +151,25 @@ export const Hero = () => {
             { label: 'MINUTES', val: timeLeft.minutes },
             { label: 'SECONDS', val: timeLeft.seconds }
           ].map((item, idx) => (
-            <div key={idx} className="festive-card" style={{
-              padding: '12px 6px',
-              textAlign: 'center',
-              background: '#FFFFFF'
-            }}>
-              <span style={{
-                display: 'block',
-                fontSize: '1.5rem',
-                fontWeight: 700,
-                fontFamily: 'Marcellus, serif',
-                color: '#D97706'
-              }}>
-                {String(item.val).padStart(2, '0')}
-              </span>
-              <span style={{ fontSize: '0.62rem', color: '#78716C', fontWeight: 600 }}>
-                {item.label}
-              </span>
-            </div>
+            <React.Fragment key={idx}>
+              <div style={{ textAlign: 'center' }}>
+                <span style={{
+                  fontSize: '1.5rem',
+                  fontWeight: 700,
+                  fontFamily: 'Marcellus, serif',
+                  color: '#D97706',
+                  display: 'block'
+                }}>
+                  {String(item.val).padStart(2, '0')}
+                </span>
+                <span style={{ fontSize: '0.68rem', color: '#78716C', fontWeight: 600 }}>
+                  {item.label}
+                </span>
+              </div>
+              {idx < 3 && (
+                <span style={{ fontSize: '1.2rem', color: 'rgba(217, 119, 6, 0.3)', fontWeight: 300 }}>:</span>
+              )}
+            </React.Fragment>
           ))}
         </div>
       </div>
