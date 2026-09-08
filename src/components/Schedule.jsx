@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SCHEDULE_DATA } from '../data/scheduleData';
-import { Clock, MapPin } from 'lucide-react';
+import { Clock } from 'lucide-react';
 
 export const Schedule = ({ activeEventId, onSelectEvent }) => {
   const [selectedDay, setSelectedDay] = useState(0);
@@ -85,9 +85,6 @@ export const Schedule = ({ activeEventId, onSelectEvent }) => {
                   }}>
                     <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
                       <Clock size={14} color="#D97706" /> {evt.time}
-                    </span>
-                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
-                      <MapPin size={14} color="#D97706" /> {evt.location}
                     </span>
                   </div>
                 </div>
