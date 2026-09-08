@@ -1,0 +1,135 @@
+export const MANDAPS_DATA = [
+  // Mumbai Mandaps
+  {
+    id: 'lalbaugcha-raja',
+    city: 'Mumbai',
+    name: 'Lalbaugcha Raja (लालबागचा राजा)',
+    location: 'Lalbaug, Parel, Mumbai',
+    established: '1934',
+    highlight: 'The Navsacha Ganpati (Fulfiller of all wishes). Over 1.5 million devotees visit daily.',
+    description: 'Founded in 1934 by local fisherfolk and market vendors, Lalbaugcha Raja is the most iconic Ganpati in the world. Famous for its majestic 12-foot traditional idol design crafted by the Kambli family for generations.',
+    tips: 'Line up early in the morning for Mukh Darshan. Charan Sparsh queue requires patient wait.',
+    mapsUrl: 'https://maps.google.com/?q=Lalbaugcha+Raja+Mumbai',
+    image: './assets/images/mandaps/lalbaugcha-raja.jpg',
+    tags: ['Most Famous', 'Navsacha Ganpati', 'Historic']
+  },
+  {
+    id: 'gsb-seva-mandal',
+    city: 'Mumbai',
+    name: 'GSB Seva Mandal (जीएसबी सेवा मंडळ)',
+    location: 'King\'s Circle, Wadala, Mumbai',
+    established: '1954',
+    highlight: 'The richest Ganpati mandal in Mumbai adorned with 60+ kg of pure gold and 300+ kg silver.',
+    description: 'Known for traditional Vedic pujas performed non-stop by priests from South Kanara. Famous for eco-friendly clay idol (M मिट्टी) and multi-crore insurance coverage.',
+    tips: 'Poojas can be booked online in advance. Strict traditional dress code recommended for direct sevas.',
+    mapsUrl: 'https://maps.google.com/?q=GSB+Seva+Mandal+Kings+Circle+Mumbai',
+    image: './assets/images/mandaps/gsb-seva-mandal.jpg',
+    tags: ['Golden Bappa', 'Vedic Pujas', 'Eco-Friendly']
+  },
+  {
+    id: 'chinchpokli-chintamani',
+    city: 'Mumbai',
+    name: 'Chinchpokli Cha Chintamani (चिंचपोकळीचा चिंतामणी)',
+    location: 'Chinchpokli, Mumbai',
+    established: '1920',
+    highlight: 'Famed for grand Aagman Sohala (arrival procession) & distinct artistic posture.',
+    description: 'One of the oldest mandals in Mumbai (100+ years). Famous for its unique sitar/throne poses designed by Vijay Khatu and Reshma Khatu.',
+    tips: 'Aagman Sohala and Visarjan processions draw massive crowds of traditional Dhol-Tasha pathaks.',
+    mapsUrl: 'https://maps.google.com/?q=Chinchpokli+Cha+Chintamani+Mumbai',
+    image: './assets/images/mandaps/chinchpokli-chintamani.jpg',
+    tags: ['Centenary Mandal', 'Aagman Sohala', 'Artistic Idol']
+  },
+  {
+    id: 'khetwadi-cha-raja',
+    city: 'Mumbai',
+    name: 'Khetwadi Cha Raja (खेताडीचा राजा - 12th Lane)',
+    location: 'Khetwadi, Girgaon, Mumbai',
+    established: '1959',
+    highlight: 'Famous for creating the tallest idol variations in Mumbai (up to 40 feet).',
+    description: 'Khetwadi features 13 lanes of magnificent Ganpati mandaps, with 12th Lane taking center stage for winning national design awards year after year.',
+    tips: 'Walk through all 13 lanes of Khetwadi in the evening for a breathtaking festival lights tour.',
+    mapsUrl: 'https://maps.google.com/?q=Khetwadi+12th+Lane+Ganpati+Mumbai',
+    image: './assets/images/mandaps/khetwadi-cha-raja.jpg',
+    tags: ['Tallest Idols', 'Girgaon Charm', 'Light Displays']
+  },
+  {
+    id: 'andheri-cha-raja',
+    city: 'Mumbai',
+    name: 'Andheri Cha Raja (अंधेरीचा राजा)',
+    location: 'Azad Nagar, Andheri West, Mumbai',
+    established: '1966',
+    highlight: 'Fulfiller of vows; idol immersion happens on Sankashti Chaturthi (after 21 days).',
+    description: 'Popular among Bollywood celebrities and Western suburbs residents. Theme mandaps replicate famous Indian temples like Kedarnath or Golden Temple every year.',
+    tips: 'Dress code enforcement: Formal traditional wear required to go near the sanctum.',
+    mapsUrl: 'https://maps.google.com/?q=Andheri+Cha+Raja+Mumbai',
+    image: './assets/images/mandaps/andheri-cha-raja.jpg',
+    tags: ['Celebrity Favorite', '21 Days Utsav', 'Theme Palace']
+  },
+
+  // Pune Mandaps
+  {
+    id: 'dagadusheth-halwai',
+    city: 'Pune',
+    name: 'Shreemant Dagadusheth Halwai (श्रीमंत दगडूशेठ हलवाई)',
+    location: 'Budhwar Peth, Pune',
+    established: '1893',
+    highlight: 'The grandest deity of Pune, legendary golden mandap replica of international landmarks.',
+    description: 'Founded by sweet vendor Shreemant Dagadusheth Halwai and Lokmanya Tilak. Famous for intricate lighting structures and charity work supporting schools and healthcare.',
+    tips: 'Best visited during Atharvashirsha recitation on Rishi Panchami morning when thousands of women chant in unison.',
+    mapsUrl: 'https://maps.google.com/?q=Dagadusheth+Halwai+Ganpati+Pune',
+    image: './assets/images/mandaps/dagadusheth-halwai.jpg',
+    tags: ['Grandest in Pune', 'Gold Mandap', 'Lokmanya Tilak Legacy']
+  },
+  {
+    id: 'kasba-ganpati',
+    city: 'Pune',
+    name: 'Kasba Ganpati (कसबा गणपती - Manacha Pahila)',
+    location: 'Kasba Peth, Pune',
+    established: '1893',
+    highlight: '1st Honored (Manacha Pahila) Ganpati of Pune, Gram Devta of Pune city.',
+    description: 'Instated by Chhatrapati Shivaji Maharaj and Jijau in 1630. Kasba Ganpati leads the world-famous Pune Visarjan Miravti on Anant Chaturdashi.',
+    tips: 'Witness the traditional Palakhi (Palanquin) procession lead by traditional Dhol Tasha Pathaks.',
+    mapsUrl: 'https://maps.google.com/?q=Kasba+Ganpati+Peth+Pune',
+    image: './assets/images/mandaps/kasba-ganpati.jpg',
+    tags: ['Manacha 1st', 'Gram Devta', 'Shivaji Maharaj Era']
+  },
+  {
+    id: 'tambdi-jogeshwari',
+    city: 'Pune',
+    name: 'Tambdi Jogeshwari (तांबडी जोगेश्वरी - Manacha Dusra)',
+    location: 'Kasba Peth, Pune',
+    established: '1893',
+    highlight: '2nd Honored (Manacha Dusra) Ganpati of Pune.',
+    description: 'Resides inside the ancient temple of Goddess Jogeshwari. Uses traditional silver palanquin (Ratha) for immersion procession without artificial amplifiers.',
+    tips: 'Immerse yourself in authentic Puneri culture and acoustic Dhol Tasha beats.',
+    mapsUrl: 'https://maps.google.com/?q=Tambdi+Jogeshwari+Ganpati+Pune',
+    image: './assets/images/mandaps/tambdi-jogeshwari.jpg',
+    tags: ['Manacha 2nd', 'Silver Palanquin', 'Puneri Culture']
+  },
+  {
+    id: 'guruji-talim',
+    city: 'Pune',
+    name: 'Guruji Talim (गुरुजी तालीम - Manacha Tisra)',
+    location: 'Laxmi Road, Pune',
+    established: '1887',
+    highlight: '3rd Honored Ganpati of Pune, symbol of Hindu-Muslim harmony.',
+    description: 'Established jointly by Hindu and Muslim families (Shinde and Nalband families) even before Lokmanya Tilak made Ganpati a public festival.',
+    tips: 'Located right on Laxmi Road; best spot to watch traditional martial arts and Dhol performances.',
+    mapsUrl: 'https://maps.google.com/?q=Guruji+Talim+Ganpati+Pune',
+    image: './assets/images/mandaps/guruji-talim.jpg',
+    tags: ['Manacha 3rd', 'Communal Harmony', 'Laxmi Road']
+  },
+  {
+    id: 'tulshibaug-ganpati',
+    city: 'Pune',
+    name: 'Tulshibaug Ganpati (तुळशीबाग गणपती - Manacha Chautha)',
+    location: 'Tulshibaug Market, Pune',
+    established: '1901',
+    highlight: '4th Honored Ganpati, famous for 15-ft glass-fiber idol & bustling market square.',
+    description: 'Located in Pune\'s bustling shopping hub, Tulshibaug is renowned for its magnificent themes and elaborate decorations created by local craftsmen.',
+    tips: 'Combine darshan with street shopping for traditional Puneri Pagadi and festive items.',
+    mapsUrl: 'https://maps.google.com/?q=Tulshibaug+Ganpati+Pune',
+    image: './assets/images/mandaps/tulshibaug-ganpati.jpg',
+    tags: ['Manacha 4th', '15ft Idol', 'Historic Market']
+  }
+];
