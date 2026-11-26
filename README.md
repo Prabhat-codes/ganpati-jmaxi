@@ -22,8 +22,9 @@ npm run dev
 | `npm run dev` | Starts the local site |
 | `npm run build` | Builds the site into `dist/` |
 | `npm run lint` | Checks the code |
+| `npm run deploy` | Publishes to GitHub Pages |
 
-Pushing to `main` deploys the site.
+Pushing to `main` deploys to Vercel. Run `npm run deploy` to update GitHub Pages.
 
 ## Change the content
 
