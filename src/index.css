@@ -62,6 +62,35 @@ body {
   flex-direction: column;
 }
 
+/* Header: the links move to their own line on narrow screens. */
+.navbar-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px 16px;
+}
+
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .navbar-links {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Keeps section headings clear of the sticky header. */
+section[id] {
+  scroll-margin-top: 100px;
+}
+
 /* Typography */
 .font-festive {
   font-family: var(--font-serif);

@@ -218,7 +218,10 @@ export const ModakGame = () => {
             onMouseMove={handleMouseMove}
             style={{
               width: '100%',
-              height: '320px',
+              maxWidth: '480px',
+              height: 'auto',
+              aspectRatio: '360 / 320',
+              margin: '0 auto',
               borderRadius: '16px',
               display: 'block',
               cursor: 'ew-resize'

@@ -1,15 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, MapPin } from 'lucide-react';
 
+const START = new Date('2026-09-14T10:45:00+05:30').getTime();
+const END = new Date('2026-09-16T00:00:00+05:30').getTime();
+
+const getPhase = () => {
+  const now = Date.now();
+  if (now < START) return 'before';
+  return now < END ? 'during' : 'after';
+};
+
+const PHASE_MESSAGES = {
+  during: 'The Utsav is on! Ganpati Bappa Morya!',
+  after: 'Thank you for celebrating with us. Ganpati Bappa Morya, pudhchya varshi lavkar ya!'
+};
+
 export const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  const [phase, setPhase] = useState(getPhase);
 
   useEffect(() => {
-    const targetDate = new Date('2026-09-14T10:45:00+05:30').getTime();
-
     const updateCountdown = () => {
-      const now = new Date().getTime();
-      const difference = targetDate - now;
+      setPhase(getPhase());
+      const difference = START - Date.now();
 
       if (difference > 0) {
         setTimeLeft({
@@ -91,7 +104,7 @@ export const Hero = () => {
           gap: '12px',
           fontSize: '0.82rem',
           color: '#92400E',
-          flexWrap: 'nowrap'
+          flexWrap: 'wrap'
         }}>
           <span style={{
             display: 'inline-flex',
@@ -122,7 +135,21 @@ export const Hero = () => {
         </div>
       </div>
 
+      {phase !== 'before' && (
+        <p className="festive-card" role="status" style={{
+          width: '100%',
+          maxWidth: '600px',
+          padding: '18px 20px',
+          background: '#FFFFFF',
+          color: '#92400E',
+          fontWeight: 700
+        }}>
+          {PHASE_MESSAGES[phase]}
+        </p>
+      )}
+
       {/* Single Wide Horizontal Countdown Tile */}
+      {phase === 'before' && (
       <div style={{ width: '100%', maxWidth: '600px' }}>
         <span style={{
           fontSize: '0.72rem',
@@ -173,6 +200,7 @@ export const Hero = () => {
           ))}
         </div>
       </div>
+      )}
     </section>
   );
 };

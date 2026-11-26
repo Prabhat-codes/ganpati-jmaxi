@@ -1,16 +1,32 @@
-# React + Vite
+# JMAXI Ganpati Utsav
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## About
 
-Currently, two official plugins are available:
+The event website for Ganpati Utsav 2026, run by JMAXI, the Jai Maharashtra Association of XLRI. It is for students and the campus community. It shows the schedule and dress codes, an aarti booklet with a PDF copy, a pronunciation guide, photos from earlier celebrations, a guide to well-known mandaps in Mumbai and Pune, and a small Modak catcher game. A countdown runs before the event and a thank-you message appears after it.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Tech stack:** React, Vite, lucide-react, canvas-confetti and plain CSS. Linting with Oxlint.
 
-## React Compiler
+**Live site:** https://ganpati-jmaxi.vercel.app (also at https://prabhat-codes.github.io/ganpati-jmaxi/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Run
 
-## Expanding the Oxlint configuration
+You need Node.js 22.12 or newer.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```
+npm install
+npm run dev
+```
+
+| Command | What it does |
+|---|---|
+| `npm run dev` | Starts the local site |
+| `npm run build` | Builds the site into `dist/` |
+| `npm run lint` | Checks the code |
+
+Pushing to `main` deploys the site.
+
+## Change the content
+
+- Schedule, aartis, mandaps, photos and pronunciation: `src/data/`
+- Event start and end times: the top of `src/components/Hero.jsx`
+- Images and the aarti PDF: `public/`

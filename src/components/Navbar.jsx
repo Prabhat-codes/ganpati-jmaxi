@@ -13,11 +13,7 @@ export const Navbar = () => {
       padding: '14px 0',
       marginBottom: '8px'
     }}>
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between'
-      }}>
+      <div className="navbar-row">
         {/* Brand Logo with Ganesha Icon */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
           <div style={{
@@ -57,7 +53,7 @@ export const Navbar = () => {
         </div>
 
         {/* Clean Nav Links */}
-        <nav style={{ display: 'flex', gap: '18px', fontSize: '0.85rem', fontWeight: 600 }}>
+        <nav className="navbar-links">
           <a href="#schedule" style={{ color: '#57534E', textDecoration: 'none' }}>Schedule</a>
           <a href="#aartis" style={{ color: '#57534E', textDecoration: 'none' }}>Aartis</a>
           <a href="#mandaps" style={{ color: '#57534E', textDecoration: 'none' }}>Mandaps</a>

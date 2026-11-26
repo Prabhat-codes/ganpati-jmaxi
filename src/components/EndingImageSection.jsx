@@ -1,5 +1,5 @@
 import React from 'react';
-import endingImg from '../../ending_image.png';
+import endingImg from '../assets/ending_image.png';
 
 export const EndingImageSection = () => {
   return (
@@ -18,7 +18,7 @@ export const EndingImageSection = () => {
       }}>
         <img
           src={endingImg}
-          alt="Ending Image"
+          alt="JMAXI Ganpati Utsav closing banner"
           style={{
             width: '100%',
             height: 'auto',
